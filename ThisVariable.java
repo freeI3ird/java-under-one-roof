@@ -7,7 +7,7 @@
             To access class level var use 'this.<var-name>'
         4. 'this' can be defined explicitly as Parameter to the function.
                 a. 'this' should be first parameter in this case.
-                b. No need to pass 'RID' as argument in function call.
+                b. No need to pass 'reference-id' as argument in function call.
 */
 class ThisVariable
 {

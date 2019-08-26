@@ -10,20 +10,21 @@
                 - May be starting some Thread
                 - Accessing some file/resource
             4. If we don't write any constructor, Compiler will put default constructor implicitly.
-            5. If we write Parameterized constructor, then we need to explicityly write default constructor.
+            5. If we write Parameterized constructor, then we need to explicitly write default constructor.
             6. Name same as of class why?
                 - Consider: ClassName ob = new ClassName()
                 - 'new' operator create object but it must know the ClassName to do so and 
                   Constructor must be called right after object creation. So to handle this 
-                  it is given same name as class, now 'new' operator will know the ClassName 
-                  and after object creation, Constructor will be called.
+                  it is given same name as class and Constructor is called from a fixed position( next to 'new'),
+                  now 'new' operator will know the ClassName and after object creation, Constructor will be called and 
+                  reference-id of object is passed to constructor.
             7. Every function return something but Constructor don't.
                 - Because it implicitly returns the <reference-id> of object 
                 
         Data Members:
             Non-Static/Instance:
                 Value different for every object 
-                Can be initialized at class level(But not of much use, as value of instance variables are different for every object)
+                Can be initialized at class level(But not of much use, as value of instance variables are generally different for every object)
                     
             Static:
                 Value same for every object.
@@ -37,7 +38,8 @@
             Static: 
                 Perform some general task
                 Not related to object, Non-static things are not allowed inside static method 
-                If you want to use Non-static things, then first make object inside this function then use Iterable
+                If you want to use Non-static things, then first make object inside this function then use it.
+                Accessed using <class-name>
 */
 class CoderClassDesign 
 {

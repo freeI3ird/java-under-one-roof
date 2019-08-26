@@ -28,6 +28,7 @@ class StrangerThings101
         System.out.println("Inside the CONSTRUCTOR");
         System.out.println("Value of x: " + x);
         System.out.println("Value of y: " + y);
+        System.out.println("Value of z: " + z);
     }
     public static void main (String[] args) {
         StrangerThings101 ob = new StrangerThings101();
