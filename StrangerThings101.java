@@ -34,3 +34,14 @@ class StrangerThings101
         StrangerThings101 ob = new StrangerThings101();
     }
 }
+/*
+OUTPUT:
+Inside the getY()
+value of X:20
+value of Y:0
+value of Z:0
+Inside the CONSTRUCTOR
+Value of x: 20
+Value of y: 100
+Value of z: 40
+*/

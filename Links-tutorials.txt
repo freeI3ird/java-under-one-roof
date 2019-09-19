@@ -1,2 +1,5 @@
 1. Difference between ASSOCIATION, COMPOSITION AND AGGREGATION
 LINK: https://javarevisited.blogspot.com/2014/02/ifference-between-association-vs-composition-vs-aggregation.html
+
+2. Understand Interfaces
+Link: https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html

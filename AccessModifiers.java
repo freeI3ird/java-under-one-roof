@@ -1,4 +1,5 @@
 /*
+    MODIFIER  SCOPE
   1. default: package level
   2. public: anywhere
   3. protected: package level -- child class & child class can be outside the package

@@ -19,6 +19,15 @@
         - super.show(); run the method of Parent class 
         - ((Parent)ob).show(); run the method depending on the object which is of Child class
     
+    4. Non-static can override only Non-static and static method can overide only static. No cross category overiding is allowd.
+       In case of static method, this is not called overiding but 'function hiding'.
+    5. What about Static Member functions
+        - They are functions not method because they are not related to object
+        - Can't use 'this', 'super' inside static.
+        - Best way to call static func. is by 'class-name', corresponding class function is called
+            E.g: <class-name>.staticFunction();
+        - Static func. call depends on 'Type of Reference variable' same as Data Members. 
+        - In INHERITANCE, Behaviour of Static functions is same as of Data Members.       
 */
 class GrandParent
 {
@@ -35,6 +44,10 @@ class GrandParent
         System.out.println("Inside the Parameterized constructor of GrandParent");
         this.name = name;
         surname = tmp_surname;
+    }
+    static void showStaticDetails()
+    {
+        System.out.println("pension and category of Grandfather:" + pension + " " + category);
     }
     void showDetailsGrandParent()
     {
@@ -68,6 +81,10 @@ class Parent extends GrandParent
         super(grandparent_name, surname);
         System.out.println("Inside the Parameterized constructor of Parent");
         this.name = name;
+    }
+    static void showStaticDetails()
+    {
+        System.out.println("Category of Parent:" + category);
     }
     void showDetailsParent()
     {
@@ -103,6 +120,16 @@ class Child extends Parent
         System.out.println("Inside the Parameterized constructor of Child class");
         this.name = name;
     }
+    // static void showStaticDetails()
+    // {
+    //     System.out.println("Child category:" + category);
+    //     // 'super', 'this' can't be used inside the static function.
+    //     // super.showStaticDetails();    ERROR
+    //     // ((Parent)this).showStaticDetails(); ERROR
+    //     // ((GrandParent)this).showStaticDetails(); ERROR
+    //     // Parent.showStaticDetails();   Parent's function is called
+    //     // GrandParent.showStaticDetails(); GrandParent's function is called
+    // }
     void showDetails()
     {
         System.out.println("Reference-id:"+ this);
@@ -131,6 +158,10 @@ class InheritanceMemberFunctions
 {
     public static void main (String[] args) {
         Child ob = new Child("zabar", "ram", "gopal", "das");
-        ob.display();
+        // ob.display();
+        // ob.showStaticDetails();
+        // ((Parent)ob).showStaticDetails();
+        // ((GrandParent)ob).showStaticDetails();
+        
     }
 }

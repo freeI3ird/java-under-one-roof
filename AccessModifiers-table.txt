@@ -1,7 +1,7 @@
 
 ---------------------------------------------------------------------
-            | Class | Package | Subclass     | Subclass     |Outside|
-            |       |         |(same package)|(diff package)|Class  |
+Scope ->  | | Class | Package | Subclass     | Subclass     |Outside|
+Modifier \|/|       |         |(same package)|(diff package)|Class  |
 ————————————-———————-—————————-——————————-----—————————----—-————————
 public      | Yes   |  Yes    |    Yes       |    Yes       |   Yes |    
 ————————————-———————-—————————-—————————----—-—————————----—-————————

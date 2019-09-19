@@ -4,7 +4,7 @@
         If Child and base class both has data member with same name then this is data hiding.
         Preference given to the Child class if accessed from inside child.
         To access data member of Parent class from inside child
-            - Use super: super.<var-name>
+            - Use super: super.<var-name> but 'super' can be only used inside child of the parent we are accessing
             - TypeCast: ((<par-class>)<child-object>).<var-name>
         To access data member of Parent class from anywhere
             - TypeCast: ((<par-class>)<child-object>).<var-name>
@@ -24,6 +24,7 @@
             - Child ob = new Child(), ob.<var-name>: Child class data member <var-name> is accessed
             - If the <var-name> is not present in that class then error is thrown( checks unique existence).
             - ((Parent)this).<var-name> : Parent class <var-name> is accessed and Parent class must have it
+            - This above rule applicable for Parent, Parent of Parent, or any Parent in the ancesters.
 */
 class GrandParent
 {
